@@ -175,7 +175,8 @@ begin
       volume_option[:bootable] = true
       @bootable_exists = true
     end
-
+    volume_option[:active] = true
+    
     body_hash = {
       "type"=>volume_option[:type],
       "size"=>volume_option[:size_in_bytes],
